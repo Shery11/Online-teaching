@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>VCap</title>
+
+        <!-- CSS -->
+        <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		    <link rel="stylesheet" href="css/form-elements.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        
+
+        <!-- Favicon and touch icons -->
+        
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+       
+
+
+<ui-view></ui-view>
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>© 2017 - All Rights with VCap</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="#">vcap.com</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#">Contact us</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <!-- Angular scripts -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angularfire/dist/angularfire.js"></script>
+        <script src="bower_components/firebase/firebase.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+        <!-- app.js -->
+        <script src="app/app.js"></script>
+        <script src="app/route.js"></script>
+
+        <!-- controllers -->
+        <script src="controllers/mainCtrl.js"></script>
+        <script src="controllers/profileCtrl.js"></script>
+        <script src="controllers/watchCtrl.js"></script>
+
+        <!-- Javascript -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+        <!-- webRTC -->
+        <script src="node_modules/simplewebrtc/latest.js"></script>
+        <script src="node_modules/ng-simple-webrtc/ng-simple-webrtc.js"></script>
+
+   
+       <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+       <script>
+           // Initialize Firebase
+          var config = {
+         apiKey: "AIzaSyAO1t2S8b6kgzLYeqmCGXKrtx1RMEarknA",
+         authDomain: "vcap-5275e.firebaseapp.com",
+         databaseURL: "https://vcap-5275e.firebaseio.com",
+         storageBucket: "vcap-5275e.appspot.com",
+         messagingSenderId: "614886767507"
+          };
+        firebase.initializeApp(config);
+      </script>
+ 
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,121 @@
+
+        <!-- Content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                        	<a class="logo" href="index.html"></a>
+                            <h1><strong>Virtual</strong>Realtime classrooms</h1>
+                            <div class="description">
+                            	<h4>
+	                            	Best way to get education from your Home, <strong>Signup</strong>  and start learning now.
+                            	</h4>
+                            </div>
+                            <div class="top-big-link">
+                            	<a class="btn btn-link-1 launch-modal" href="#" ng-click="launchModel()" data-modal-id="modal-register" ng-click="launchModel()" >Sign up</a>
+                                <a class="btn btn-link-1 launch-modal" href="#" ng-click="launchModel()" data-modal-id="modal-login" >Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- MODAL register -->
+        <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-register-label">Sign up now</h3>
+        				<p>Fill in the form below to get instant access:</p>
+        			</div>
+        			
+        			<div class="modal-body">
+        				
+	                    <form  name="register" role="form" class="registration-form" ng-submit="signUp()">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="form-first-name">Name</label>
+	                        	<input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name" required ng-model='name'>
+	                        </div>
+	                       
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="form-email">Email</label>
+	                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email" required ng-model='email'>
+	                        </div>
+                             <div class="form-group">
+                                <label class="sr-only" for="form-password">Password</label>
+                                <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password" required ng-model='password'>
+                            </div>
+                             <div class="form-group">
+                                <label class="sr-only" for="form-number">Phone</label>
+                                <input type="text" name="form-number" placeholder="0345000000" class="form-number form-control" id="form-number" required ng-minlength="11" ng-maxlength='11' ng-model='phone'>
+                            </div>
+                            <div class="form-group">
+	                        	<label class="sr-only" for="form-about-yourself">About yourself</label>
+	                        	<textarea name="form-about-yourself" placeholder="About yourself..." 
+	                        		class="form-about-yourself form-control" id="form-about-yourself" ng-model='text' required></textarea>
+	                        </div>
+                            <div class="form-group">
+                            <label class="custom-control custom-radio" >
+                                  <input id="radio1" name="radio" type="radio" class="custom-control-input" required>
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">As a teacher</span>
+                                  </label>
+                                  <label class="custom-control custom-radio">
+                                  <input id="radio2" name="radio" type="radio" class="custom-control-input" required>
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description">As a student</span>
+                            </label>
+                            </div>
+	                        <button type="submit" class="btn">Sign me up!</button>
+	                    </form>
+	                    
+        			</div>
+        			
+        		</div>
+        	</div>
+        </div>
+
+        <!-- log in -->
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                        </button>
+                        <h3 class="modal-title" id="modal-register-label">Log In</h3>
+                        
+                    </div>
+                    
+                    <div class="modal-body">
+                        
+                        <form role="form" class="registration-form" ng-submit="signIn()">
+                           <div class="form-group">
+                                <label class="sr-only" for="form-email">Email</label>
+                                <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email" required ng-model='email'>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">Password</label>
+                                <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password" required ng-model='password'>
+                            </div>
+                            <button type="submit" class="btn" >Log in!</button>
+                        </form>
+
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
